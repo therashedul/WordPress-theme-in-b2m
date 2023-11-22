@@ -1,0 +1,19 @@
+<div class="col-sm-12 bottom-margin service-panel">
+                            <?php
+                            $page_data = get_page_by_title("Bulk SMS");
+                            $content =  $page_data->post_content;
+                            $post_id = $page_data->ID;
+                            $title = $page_data->post_title;
+                            $post_thumbnail_id = get_post_thumbnail_id($post_id);
+
+                            if ($post_thumbnail_id) {
+                                  $post_thumbnail_img = wp_get_attachment_image_src($post_thumbnail_id, 'post-thumbnails');
+                                ?>
+                <a href="<?php echo get_page_link(get_page_by_path('/service/Bulk SMS')); ?>">    <img src="<?php echo $post_thumbnail_img[0]; ?>" style=" width:100%; height: auto; margin: auto" ></a>
+                            <?php } ?>
+                            <div class="home-server-title">
+                                <h3>  <a href="<?php echo get_page_link(get_page_by_path('service/Bulk SMS')); ?>"> <?php echo $title; ?></a></h3>
+                                <?php echo $content; ?>
+                            </div>
+                     <br />
+                        </div>

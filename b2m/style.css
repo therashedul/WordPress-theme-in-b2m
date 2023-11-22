@@ -1,0 +1,396 @@
+
+/*
+Theme Name: B2M
+Theme URI: http://www.b2m-tech.com/b2m/
+Author: Md Rashedul Karim
+Author URI: http://www.b2m-tech.com/
+Description: B2M brings your site to life with header featured images.With a focus on technical sites, it features multiple sections on the front page as well as widgets,navigation and social menus, a logo, and more.
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.b2m-tech.com/
+Text Domain: b2m-tech
+Tags: Any devices, apps, robots, and everything else that makes technology.
+*/
+.hentry.type-post .entry-content {
+    width: 100%;
+}
+.header-part {
+    box-sizing: content-box;
+    background-image: url(img/top-down-bg.png);
+    padding: 6px 0 0 0;
+}
+img.right-img {
+    float: right;
+}
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active{
+    background: #fff;
+    color: #000 !important;
+}
+.logo-panel{
+    margin: 10px 0 15px 0;
+}
+.float-left{
+    padding-left: 30px !important;
+    
+}
+.logo-right{
+    margin: 18px 0 0 0;    
+}
+.navbar{
+    padding: 0px !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    padding: 10px 33px;   
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 10px 33px !important;
+}
+
+
+/*sticky header position*/
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav {
+  background: rgba(16,16,16, 0.5);
+  min-height: auto;
+}
+/*End sticky header position*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #ff0000;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #f7941e;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#content {
+    height: auto;
+}
+/******************************************************************* Top panel*/
+h1.page-title{
+    border-bottom: #af0000 solid 5px;
+    padding: 0 0 6px 10px;
+}
+.top-panel {
+    padding: 5px 0;
+    background: #f5f5f5;
+}
+.top-left
+{
+    margin: 5px 0 0 0;
+}
+
+.top-right
+{
+    margin: 0px;
+}
+
+.top-left ul,
+.top-right ul{
+    margin: 0px;
+    padding: 0px;
+}
+.top-left ul li{
+    float: left;
+    list-style-type: none;
+    margin-right: 10px;
+}
+.top-right ul li{
+    float: right;
+    list-style-type: none;
+    margin-right: 10px;    
+}
+a.facebook-font {
+    color: #4267b2;
+}
+
+a.google-font{
+    color: #c85041;
+
+}
+a.google-font{
+
+}
+a.twitter-font{
+    color: #41bff5;
+}
+a.twitter-font{
+
+}
+/*************************************************************** End Top panel*/
+
+
+
+.menu-m{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+
+h2.first-title,
+h2.secund-title
+{
+    padding-bottom: 10px;
+    border-left: #ed1c24 solid 5px;
+    padding-left: 10px;
+    color: #000;
+}
+.home-service-panel{
+    padding-left: 20px; 
+    padding-top: 17px;
+}
+.home-service-panel .home-service-title{
+    margin-bottom: 20px;
+}
+.home-server-title {
+    padding-bottom:  20px; padding-top: 20px; text-align: justify;
+}
+.home-server-title  h3 a{
+    margin: 0px;
+    color: #000;   
+    -webkit-box-shadow: none !important;
+    box-shadow: none; 
+}
+.entry-content a img{
+    -webkit-box-shadow: none !important; 
+    box-shadow: none !important; 
+}
+.home-server-title h3 a:hover{
+    color: #ff0000;   
+}
+.dropdown-menu.show {
+    background: #ff0000;
+}
+.dropdown-menu.show a{
+    color: #fff;
+}
+
+.dropdown-menu.show a:hover{
+    color:#000;
+}
+.dropdown-item.active, .dropdown-item:active{
+    color:#000 !important;
+    text-decoration: none;
+    background-color: #fff !important;
+
+}
+/**************************************************************** breadcrumbe*/
+.breadcrumbe-body {
+    display: block;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.85);      
+    overflow: hidden;
+    padding: 15px 0px;
+}
+.breadcrumbe-body::after {
+    content: "";
+    background-image:  url(img/m-slider.jpg);   
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    top: -175px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+.breadcrumbe-panel{
+    width: 100%
+}
+p#breadcrumbs{
+    float: right;
+    margin: 5px 0 5px 0;
+}
+strong.breadcrumb_last {
+    color: #fff;
+}
+p#breadcrumbs span span a{
+    color: #ed1c24;
+}
+p#breadcrumbs span span a:hover{
+    color: #f7941e;
+}
+p#breadcrumbs span span{
+    color: #fff;
+}
+
+/****************************************************************** Page panel*/
+
+/*about page*/
+.about-panel{
+    box-sizing: content-box;
+    background: url(img/m-bg.png) repeat top center #e9ebeb;
+    padding: 30px 0 30px 0;
+}
+
+.service-panel{
+    box-sizing: content-box;
+    background: url(img/dot-bg.png) repeat top center #e9ebeb;
+    padding: 30px 0 30px 0;
+}
+
+.page-single-img {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 25px auto;
+}
+.page-single-img img{
+    padding: 0px;
+    margin: 0px;
+}
+.page-single-img img.alignleft.wp-post-image {
+    width: 100%;
+    height: 350px;
+}
+
+.su-tabs-nav span.su-tabs-current {
+    background: #ed1c24 !important;
+    cursor: default;
+    color: #fff;
+}
+.su-tabs{
+    min-height: 350px;
+/*    background: none !important;*/
+}
+.menu-d{
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.ac{
+    color: #fff;
+}
+.acb{
+    color: #000;
+}
+.button-1 {
+    background-color: #ff0000; /* Green */
+    border: none;
+    color: #000;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button-active{
+
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ff0000;
+    padding: 2px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.bottom-margin{
+    margin-bottom: 30px;
+}
+
+.active-img{
+    border: 4px solid #ccc;
+}
+.active-img:hover{
+    border: 4px solid #ff0000;
+}
+.active-img:focus{
+    border: 4px solid #ff0000;
+}
+.active-img:active{
+    border: 4px solid #ff0000;
+}
+
+.title-404{
+    float: left;
+    width: 100%;
+    
+}
+.search-text{
+    width: 100%;
+    display: block;
+}
+button.search-submit {
+    float: right;
+    width: 22%;
+}
+svg.icon.icon-search {
+    width: 100%;
+}
+/*****************************************************************footer panel*/
+.footer-panel {
+    box-sizing: content-box;
+    background-image: url(img/top-down-bg.png);
+}
+.footer-bottom{
+    background-color: rgba(52,52,52,.5);
+}
+.footer-top{
+    padding: 50px 0px 40px 0;
+}
+.footer-title{
+    margin: 0 0 15px 0;
+    color: #fff;
+    text-align: left;
+}
+
+.social-part .widget a img {
+    -webkit-box-shadow: none; 
+     box-shadow: none; 
+     margin-bottom: 5px;
+}
+.social-part  .textwidget a img{
+    margin-bottom: 5px;
+}
+.copyright-part{
+    color: #cdcdcd; 
+    text-align: center;
+    padding: 25px 0 5px 0;
+    
+}
+.copyright-part p{
+    display: block;
+    text-align: center;
+}
+.important-part a{
+    color: #cdcdcd;
+}
+.important-part a:hover{
+    text-decoration: underline;
+    color:#fff;
+    
+}
+/*************************************************************End footer panel*/
+
+

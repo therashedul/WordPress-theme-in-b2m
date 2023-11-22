@@ -1,0 +1,33 @@
+//Cusomt post type for shortcode
+add_shortcode('service-list', 'bpo_service_list');
+function bpo_service_list($atts) {
+    $atts = shortcode_atts(array(
+        'category' => ''
+            ), $atts);
+    $terms = get_terms('service_category');
+    wp_reset_query();
+    $args = array('post_type' => 'service',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'service_category',
+                'field' => 'slug',
+                'terms' => $atts,
+            ),
+        ),
+    );
+    $loop = new WP_Query($args);
+    if ($loop->have_posts()) {
+        while ($loop->have_posts()) : $loop->the_post();
+            ?>
+            <a href="<?php the_permalink(); ?>"><?= the_title(); ?></a>
+            <?php
+            echo ' "' . get_the_title() . '" ';
+        endwhile;
+    }
+    else {
+        echo 'Sorry, no posts were found';
+    }
+}
+
+// For display
+ <?php echo do_shortcode('[service-list category="new service category"]'); ?>
