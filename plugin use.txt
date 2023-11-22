@@ -1,0 +1,11 @@
+all-in-one-wp-migration
+black-studio-tinymce-widget
+classic-editor
+insert-php-code-snippet
+regenerate-thumbnails
+shortcodes-ultimate
+siteorigin-panels
+smart-slider-3
+so-widgets-bundle
+tinymce-advanced
+wordpress-seo
